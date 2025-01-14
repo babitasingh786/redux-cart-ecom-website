@@ -11,7 +11,7 @@ const ProductsCard = (props) => {
 
 
     // const dispatch = useDispatch();
-    const {img,rating,title,price} = props;
+    // const {id,image,rating,title,price} = props;
     const [isAdded , setIsAdded] = useState(false);
     const dispatch= useDispatch();
 
@@ -37,11 +37,11 @@ const ProductsCard = (props) => {
         <>
             <div className="product_card">
                 <figure>
-                    <img src={img} alt="item-img" />
+                    <img src={props.image} alt="item-img" />
                 </figure>
-                <strong className="rating">{rating}</strong>
-                <h4 className="title">{title}</h4>
-                <h3 className="price">₹ {price.toLocaleString()}</h3>
+                {/* <strong className="rating">{props.rating}</strong> */}
+                <h4 className="title">{props.title}</h4>
+                <h3 className="price">₹ {props.price}</h3>
                 <button
                     type="button"
                     className={`btn ${isAdded ? 'added' : ''}`}

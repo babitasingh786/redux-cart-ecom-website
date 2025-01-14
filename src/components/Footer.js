@@ -5,14 +5,14 @@ const Footer = () => {
         <>
             <footer id="footer">
                 <div className="container">
-                    <a
+                    {/* <a
                         href="https://github.com/gulshancodes/redux-shopping-cart"
                         className="repo_link"
                         target="_blank"
                         rel="noreferrer"
                     >
                         github.com/gulshancodes/redux-shopping-cart
-                    </a>
+                    </a> */}
 
                     <p>
                         Built by | &nbsp;
@@ -21,7 +21,7 @@ const Footer = () => {
                             target="_blank"
                             rel="noreferrer"
                         >
-                            Gulshan Songara
+                            Babita Singh
                         </a>
                     </p>
                 </div>
