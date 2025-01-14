@@ -1,6 +1,5 @@
 # Redux Shopping Cart
 
-<!-- ### [Demo Link](https://reduxtoolkit-shop-cart.netlify.app/) 🔗 -->
 
 **Shopping Cart Project** built with **React** + **Redux-Toolkit**.
 
@@ -24,7 +23,7 @@
 
 ## Author:
 
-<!-- - **Gulshan Songara** - **[Portfolio Website](https://gulshansongara.netlify.app)**, **[Linkedin](https://www.linkedin.com/in/gulshan-songara/)** -->
+
 
 <br/>
 
