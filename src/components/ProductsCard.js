@@ -13,23 +13,23 @@ const ProductsCard = (props) => {
     // const dispatch = useDispatch();
     // const {id,image,rating,title,price} = props;
     const [isAdded , setIsAdded] = useState(false);
+   
     const dispatch= useDispatch();
 
 
     const handleAddToCart = () => {
 
         // here, we cannot directly pass the `props` as it is, if we need to access the same value within the child component. So, we've to pass it as a different prop like this- `{...props}`
-        // const item = { ...props };
-        // dispatch(addItem(item));
+
         const item = {...props};
       
         dispatch(addItem(item));
 
         setIsAdded(true);
 
-        // setTimeout(() => {
-        //     setIsAdded(false);
-        // }, 3000);
+        setTimeout(() => {
+            setIsAdded(false);
+        }, 3000);
     };
 
 

@@ -9,7 +9,7 @@ $text-dark: #242526;
 $primary-color: #094477;
 $head-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
 $foot-shadow: 0px -5px 15px rgba(0, 0, 0, 0.5);
-$card-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+$card-shadow: rgba(164, 162, 162, 0.35) 0px 4px 10px;
 
 
 /*--====== Mixins ======--*/
@@ -77,9 +77,9 @@ a {
 }
 
 img {
-    width: 100%;
+    width: auto;
     height: 100%;
-    object-fit: cover;
+    // object-fit: cover;
 }
 
 img,
@@ -129,9 +129,10 @@ svg {
 .cart_icon {
     position: relative;
     cursor: pointer;
+    display: inline-block;
 
     .badge {
-        display: inline-block;
+        // display: inline-block;
         background-color: $text-dark;
         color: #fff;
         line-height: 1;
@@ -149,7 +150,7 @@ svg {
 
 .home_content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     text-align: center;
 
@@ -163,9 +164,9 @@ svg {
     box-shadow: $card-shadow;
     padding-top: 1rem;
     overflow: hidden;
-    padding: 10pxs;
-    // width: 100%;
-    // height: auto;
+    padding: 10px;
+    width: 100%;
+    height: auto;
     figure {
         width: 100%;
         height: 300px;
@@ -307,6 +308,13 @@ svg {
     align-items: center;
     gap: 2.2rem;
     margin-bottom: 2rem;
+    .cart_item_img {
+        width: 100px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    } 
 }
 
 .cart_items_info {
@@ -374,6 +382,7 @@ svg {
         background-color: $text-light;
         color: #000;
         font-size: 1rem;
+        margin-right: 20px;
         padding: 0.4rem 0.8rem;
 
         &[disabled] {

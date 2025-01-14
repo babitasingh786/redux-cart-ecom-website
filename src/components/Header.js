@@ -9,18 +9,9 @@ const Header = () => {
     const handleOpenCart = (open) =>{
         dispatch(toggleCart(open))
     }
-   const cartQuantity = cartItems.quantity;
-    // const { cartItems } = useSelector((state) => state.cart);
+//    const cartQuantity = cartItems.quantity;
+const cartQuantity = cartItems.length;
 
-    // const dispatch = useDispatch();
-
-
-    // const handleOpenCart = (open) => {
-    //     // dispatch(toggleCart(open));
-    // };
-
-
-    // const cartQuantity = cartItems.length;
 
 
     return (
@@ -31,6 +22,8 @@ const Header = () => {
                         <h4>Redux Shopping Cart</h4>
                         <div className="nav_menu">
                             <div
+
+                            
                                 title="Cart"
                                 className="cart_icon"
                                 onClick={() => handleOpenCart(true)}
