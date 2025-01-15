@@ -124,6 +124,12 @@ svg {
     @include flex(space-between, center);
     // display: flex;
     // justify-content: space-between;
+    .nav_menu{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        
+    }
 }
 
 .cart_icon {
@@ -389,5 +395,47 @@ svg {
             opacity: 0.5;
             cursor: not-allowed;
         }
+    }
+}
+
+// login form css
+.login-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+    .form-contnet{
+        margin: 6rem auto;
+        width: 500px;
+        height: auto;
+        background-color: rgb(188, 217, 252);
+        display: flex;
+        flex-direction: column;
+        padding-bottom:1rem ;
+        box-shadow: $card-shadow;
+      
+        input{
+            padding: 15px ;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        .login-heading{
+            color: $primary-color;
+            margin: 1rem;
+            text-align: center;
+        }
+        .btn-group{
+            display: flex;
+            justify-content: center;
+            .btn{
+                padding: 10px 20px;
+                margin: 10px 5px;
+                border-radius: 10px;
+                background-color: #094477;
+                color: white;
+            }
+
+        }
+      
     }
 }

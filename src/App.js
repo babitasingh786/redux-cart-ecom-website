@@ -5,6 +5,8 @@ import Footer from './components/Footer';
 import Cart from './components/Cart';
 import { Provider } from 'react-redux';
 import store from './store/store';
+import { Route, Routes } from 'react-router-dom';
+import Login from './components/Authentication/Login';
 
 
 const App = () => {
@@ -12,10 +14,15 @@ const App = () => {
     <>
       <Provider store={store}>
         <Header />
-        <Home />
+        <Routes>     
+          <Route path="/" element={<Home />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
         <Footer />
-        <Cart />
+
       </Provider>
+
     </>
   );
 };

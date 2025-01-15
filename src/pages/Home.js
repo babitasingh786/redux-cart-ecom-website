@@ -52,13 +52,13 @@ const Home = () => {
                 <div className="container">
                     <div className='home_content'>
                         {
-                            productsData.map((item)=>(
+                            productsData.map((item) => (
                                 <ProductsCard key={item.id} {...item} />
                             ))
                         }
                     </div>
-                    </div>
-       
+                </div>
+
             </section>
         </>
     );
