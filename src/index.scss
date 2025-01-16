@@ -439,3 +439,49 @@ svg {
       
     }
 }
+.nav_menu{
+    display: flex;
+    ul{
+        list-style: none;
+        display: flex;
+    }
+    li{
+        padding: 10px;
+    }
+    .account-btn{
+        background-color: $primary-color;
+    }
+  
+}
+.dropDownMenu  {
+    width: 200px;
+    height: auto;
+    background-color: white;
+    box-shadow: $card-shadow;
+    position: absolute;
+    top: 100%;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    color: $primary-color;
+    z-index: 1111111;
+    li{   
+        button{
+            padding: 9px;
+            background-color: white;
+            width: 100%;
+            border-bottom: 1px solid rgba(210, 206, 206, 0.8);
+            text-align: left;
+            font-family: $main-font;
+            font-size: 16px;
+            letter-spacing: 0.4px;
+            & :hover{
+                opacity: 0.8;
+            }
+            .drop-icon{
+                margin-right: 10px;
+            }
+           
+        }
+    }
+}
